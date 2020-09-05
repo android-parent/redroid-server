@@ -1,0 +1,27 @@
+{
+  "name": "io.redroid.server",
+  "version": "1.0.0",
+  "description": "ReDroid gRPC server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remote-android/redroid-server.git"
+  },
+  "keywords": [
+    "Redroid",
+    "remote-android"
+  ],
+  "author": "Ziyang Zhou",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/remote-android/redroid-server/issues"
+  },
+  "homepage": "https://github.com/remote-android/redroid-server#readme",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.4",
+    "@kubernetes/client-node": "^0.12.0",
+    "grpc": "^1.24.3"
+  }
+}

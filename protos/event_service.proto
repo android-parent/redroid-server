@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package eventservice;
+
+import "google/protobuf/empty.proto";
+
+service EventService {
+    rpc SendEvent(EventMsg) returns (google.protobuf.Empty) {}
+}
+
+message EventMsg {
+  enum EventType {
+    BOOT_READY = 0;
+  }
+  
+  EventType event_type = 1;
+  string event_msg = 2;
+}
